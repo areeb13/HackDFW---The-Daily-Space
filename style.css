@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+}
+
+header {
+    background-position: center; /* Center the image */ 
+    background-repeat: no-repeat; /* Do not repeat the image */ 
+    background-size: cover; /* Resize the background image to cover the entire container */ 
+    text-align: center;
+    padding: 100px;
+    color: white;
+    font-size: 2em;
+}
+
+.index-head {
+    background-image: url("https://pbs.twimg.com/media/CikwGihWUAErsT4.jpg"); 
+}
+
+.news-head {
+    background-image: url("https://th-thumbnailer.cdn-si-edu.com/zXJdCvw7pRXdjYwpkx9Sokw8LZ0=/1000x750/filters:no_upscale():focal(699x393:700x394)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/b2/68/b268b300-716e-4cec-8bec-ca552f5144bf/05y_on14_bbb_opener-1.jpg");
+}
+
+.picture-head {
+    background-image: url("https://wallpapercave.com/wp/1RsfOd0.jpg");
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+.image {
+    position: relative;
+    width: fill;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+.img-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 10px;
+    background-color:black;
+    padding: 20px;
+}
+
+.news-container h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+    border: 0;
+    color:silver;
+}
+
+.news-container h2 {
+    margin: 0;
+    padding: 0px;
+    border: 0;
+    color: white;
+}
+
+.news-container p {
+    text-align: center;
+    max-width: 700px;
+    color: white;
+}
+
+.news-container a {
+    background-color:steelblue;
+    border-radius: 2rem;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.picture-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.picture-container img {
+    max-width: 500px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.picture-container p {
+    background-color:darkgrey;
+    padding: 12px;
+    font-size: 1.25em;
+}
